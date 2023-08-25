@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tabuleiro">
+        <h1 class="titulo-jogo">Jogo da Velha</h1>
+        <table>
+            <tr>
+                <td><div id="00" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="01" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="02" class="celula" onmousedown="jogada(this)"></div></td>
+            </tr>
+            <tr>
+                <td><div id="10" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="11" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="12" class="celula" onmousedown="jogada(this)"></div></td>
+            </tr>
+            <tr>
+                <td><div id="20" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="21" class="celula" onmousedown="jogada(this)"></div></td>
+                <td><div id="22" class="celula" onmousedown="jogada(this)"></div></td>
+            </tr>
+        </table>
+        <div class="status-jogo">
+            <p class="mensagem-status">Vez de X</p>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
